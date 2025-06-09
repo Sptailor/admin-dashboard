@@ -1,8 +1,14 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+
 #outer-container{ 
     display:grid;
     grid-template-rows: 100vh;
     grid-template-columns: 20vw 80vw;
-    font-family: 'Times New Roman', Times, serif;
+   
     font-size: 20px;
 
 }
@@ -11,10 +17,21 @@
     display:flex;
     flex-direction:column;
     background: rgb(57, 184, 226);
-    color:white;
+    /* color:white; */
     padding: 2vh;
     
 }
+#navbar-content p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    line-height: 27px;
+   
+  }
+  
 #navbar-content{
   padding-left: 20px;
 }
@@ -45,7 +62,7 @@
     border-radius: 17px;
     height: 40px;           
     box-sizing: border-box; 
-    background-color: #ebf6f8;
+    background-color: #cacacad0;
   }
 .search-div-inner{
     display: flex;
@@ -85,9 +102,13 @@ i{
 
     width: 8vw;
     font-size: 20px;
-    border-radius: 10%;
+    border-radius: 7%;
     border: 0px;
-    font-weight: bold;
+    font-weight:normal;
+}
+.shortcut-btn:hover{
+    font-size: 25px;
+    cursor: pointer;
 }
 #display-container{
     display: flex;
@@ -104,7 +125,7 @@ i{
 #right{
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 29vw;
     padding-top: 3%;
 }
 #left-grid{
@@ -129,6 +150,11 @@ i{
     border-top-left-radius:0 ;
     border-bottom-left-radius:0 ;
 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+             
+    padding: 16px;       
+  
+
 }
 .title{
 font-size: 25px;
@@ -150,19 +176,43 @@ padding-left: 10px;
     background-color: white;
     width: 20vw;
     padding-left: 10px;
-    height: 30vh;
+    height: 27vh;
     margin: 10px;
     border-radius: 5%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                     
+    padding: 16px;                           
+           
     
 
 }
 .title{
     padding-left: 10px;
-    font-size: 30px;
     font-weight: bolder;
 }
 .sub-title{
     padding:2px;
     font-weight: bold;
     
+}
+.card-icons{
+    display: flex;
+    justify-content: end;
+   gap: 20px;
+}
+.material-icons {
+    font-size: 20px;
+    color: #000000;
+  }
+.material-icons:hover{
+    font-size: 35px;
+    cursor: pointer;
+}
+hr{
+    width: 80%;
+}
+i:hover{
+    cursor: pointer;
+    font-size: 25px;
 }
